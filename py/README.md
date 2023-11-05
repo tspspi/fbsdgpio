@@ -1,8 +1,10 @@
 # FreeBSD GPIO ioctl wrapper for Python
 
-This is a simple wrapper around the FreeBSD ```ioctl``` calles for the
+This is a simple wrapper around the FreeBSD ```ioctl``` calls for the
 GPIO device. It allows very simple access to configuration and I/O facilities
-of the GPIO pins.
+of the GPIO pins. The author has used this package instead of existing wiring
+or similar packages to run tests for applications that are implemented using
+the same API form native code.
 
 ## Installation
 
