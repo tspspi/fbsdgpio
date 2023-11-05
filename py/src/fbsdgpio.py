@@ -259,16 +259,3 @@ class FbsdGPIO(GPIO):
 
         return True
 
-
-if __name__ == "__main__":
-    from time import sleep
-
-    gpio = FbsdGPIO()
-
-    print(f"Pin count: {gpio.getIOCount()}")
-    print(f"Pin configuration of pin 13: {gpio.getConfig(13)}")
-    print(f"Setting configuration to input on pin 13: {gpio.setConfig(13, direction=GpioDirection.INPUT)}")
-    sleep(10)
-    print(f"Setting configuration to output on pin 13: {gpio.setConfig(13, direction=GpioDirection.OUTPUT)}")
-
-    gpio.pulse(13, 0, 100)
